@@ -40,7 +40,7 @@
     "@stdlib/assert-is-integer": "^0.2.3",
     "@stdlib/assert-is-ndarray-like": "^0.2.3",
     "@stdlib/ndarray-base-to-rotr90": "github:stdlib-js/ndarray-base-to-rotr90#main",
-    "@stdlib/string-format": "^0.2.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3",
     "@stdlib/types": "^0.5.1",
     "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
