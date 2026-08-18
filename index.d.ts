@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,16 +16,21 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Return a new ndarray where a matrix (or a stack of matrices) is rotated 90 degrees clockwise.
+* Returns a new ndarray where a matrix (or a stack of matrices) is rotated 90 degrees clockwise.
 *
-* @module @stdlib/ndarray-to-rotr90
+* @param x - input array
+* @param k - number of times to rotate by 90 degrees
+* @returns output array
 *
 * @example
 * var array = require( '@stdlib/ndarray-array' );
-* var toRotr90 = require( '@stdlib/ndarray-to-rotr90' );
 *
 * var x = array( [ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ] );
 * // returns <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ]
@@ -33,12 +38,9 @@
 * var y = toRotr90( x, 1 );
 * // returns <ndarray>[ [ 4.0, 1.0 ], [ 5.0, 2.0 ], [ 6.0, 3.0 ] ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function toRotr90<T extends ndarray = ndarray>( x: T, k: number ): T;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = toRotr90;
